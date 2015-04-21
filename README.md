@@ -38,13 +38,13 @@ BigCommerce Timed Sale Banner
 
 ```HTML
           <div id="saleinfo"><p id="SaleTopBanner">Get ready for the holiday with our 420 sale! Enter <span class="green-bg-white-text">DANK420</span> at checkout for 15% off everything!</p><span id="countdownTo420">Ends in <span id="countdownTo420Timer"></span></span></div>
-<script src="http://cdn5.bigcommerce.com/s-ss4br/templates/__custom/js/countdown.js?t=1429550690"></script>
+<script src="%%ASSET_js/countdown.js%%"></script>
 <script type="text/javascript">
         // use countdown timer plugin to set the "countown to sale's end" clock 
         function setSaleTimer() {
             $('#countdownTo420Timer').countdown('2015/04/21', function(event) {
                 $(this).html(event.strftime('%D days %H:%M:%S'));
-            }).on('finish', function() {
+            }).on('finish.countdown', function() {
                 $('#saleinfo').remove();
             });
             //$('#countdownTo420').hide();
@@ -84,4 +84,5 @@ BigCommerce Timed Sale Banner
         widthOnResize();
     });
 </script>
+
 ```
