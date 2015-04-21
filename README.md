@@ -1,7 +1,7 @@
 # BC-Timed-Sale-Banner
 BigCommerce Timed Sale Banner
 
-
+```CSS
 /*----------Sale Banner-----------*/
 #saleinfo {
 	width: 76%;
@@ -33,9 +33,10 @@ BigCommerce Timed Sale Banner
 	color: #F47D77;
 	color: #F2142B;
 }
+```
 
 
-
+```HTML
           <div id="saleinfo"><p id="SaleTopBanner">Get ready for the holiday with our 420 sale! Enter <span class="green-bg-white-text">DANK420</span> at checkout for 15% off everything!</p><span id="countdownTo420">Ends in <span id="countdownTo420Timer"></span></span></div>
 <script src="http://cdn5.bigcommerce.com/s-ss4br/templates/__custom/js/countdown.js?t=1429550690"></script>
 <script type="text/javascript">
@@ -83,3 +84,4 @@ BigCommerce Timed Sale Banner
         widthOnResize();
     });
 </script>
+```
