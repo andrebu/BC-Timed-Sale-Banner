@@ -100,13 +100,13 @@
         $('#countdown-to-end-timer').countdown('2016/09/11 23:59:59')
         .on('update.countdown', function(event) {
             if(event.strftime('%D') > 0) {
-	            $(this).html(event.strftime('%-D days %-H:%M:%S'));
+	            $(this).html(event.strftime('%-D day%!D %-H:%M:%S'));
             }
             else if(event.strftime('%D %H %M %S') == '00 00 00 00') {
                 $('#countdown-to-end').hide();
             }
             else {
-                $(this).html(event.strftime('%-H hours %-M mins %-S secs'));
+                $(this).html(event.strftime('%-H hour%!H %-M min%!M %-S sec%!S'));
             }        
         })
         .on('finish.countdown', function() {
