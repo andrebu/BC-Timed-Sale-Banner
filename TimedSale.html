@@ -81,9 +81,12 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span>
     </span>
+
+    Labor Day
+    In honor of &nbsp;⚒ Labor Day 🇺🇸&nbsp; use promo code <span class="green-bg-white-text">DankLabor</span> for 15% OFF everything at DankStop!
     -->
     <p id="timed-sale-text">
-        In honor of &nbsp;⚒ Labor Day 🇺🇸&nbsp; use promo code <span class="green-bg-white-text">DankLabor</span> for 15% OFF everything at DankStop!
+        <span style="color:#ff9900;">Halloween</span> prices so low its 👻&nbsp;spoo-ooky! 👻&nbsp;Use promo code <span class="green-bg-white-text">TRICKORTREAT</span> for 15% OFF everything at DankStop!
     </p>
     <span id="countdown-to-end">Ends in 
         <span id="countdown-to-end-timer">
@@ -97,10 +100,10 @@
 <script type="text/javascript">
     // use countdown timer plugin to set the "countown to sale's end" clock 
     function setSaleTimer() {
-        $('#countdown-to-end-timer').countdown('2016/09/11 23:59:59')
+        $('#countdown-to-end-timer').countdown('2016/10/31 23:59:59')
         .on('update.countdown', function(event) {
             if(event.strftime('%D') > 0) {
-	            $(this).html(event.strftime('%-D day%!D %-H:%M:%S'));
+                $(this).html(event.strftime('%-D day%!D %-H:%M:%S'));
             }
             else if(event.strftime('%D %H %M %S') == '00 00 00 00') {
                 $('#countdown-to-end').hide();
@@ -150,4 +153,4 @@
         //getContentWidth();
         //widthOnResize();
     });
-</script>
+</script>​
