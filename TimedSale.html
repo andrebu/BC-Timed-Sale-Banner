@@ -85,8 +85,39 @@
     Labor Day
     In honor of &nbsp;⚒ Labor Day 🇺🇸&nbsp; use promo code <span class="green-bg-white-text">DankLabor</span> for 15% OFF everything at DankStop!
     -->
+    <!-- 
     <p id="timed-sale-text">
-        <span style="color:#ff9900;">Halloween</span> prices so low its 👻&nbsp;spoo-ooky! 👻&nbsp;Use promo code <span class="green-bg-white-text">TRICKORTREAT</span> for 15% OFF everything at DankStop!
+        <span>To better serve you, we are performing our annual physical inventory. During this process, online ordering is disabled, and will be re-enabled tomorrow, Tuesday, Nov 1st. Thank you for your patience.</span>
+    </p>
+    -->
+    <!--
+    <p id="timed-sale-text">
+        <span style="color:#ff9900;">Halloween</span> prices so low its 👻&nbsp;spoo-ooky! 👻&nbsp;Use promo code <span class="green-bg-white-text">TRICKORTREAT</span> for 15% OFF everything!
+    </p>
+    -->
+    <!--
+    <p id="timed-sale-text">
+        🇺🇸 VETERANS DAY SALE 🇺🇸 - TAKE 15% OFF WITH COUPON CODE: <span class="green-bg-white-text">DANKVETERAN</span> STOREWIDE
+    </p>
+        <p id="timed-sale-text">
+         🍁🍂 Get ahead on your early holiday shopping! 🍂🍁 Use promo code <span class="green-bg-white-text">DANKFALL</span> for 10% OFF!
+    </p>
+
+    <p id="timed-sale-text">
+         🎉 Black Friday 🤑 Weekend Blowout! 🏪 💳 🛍 &nbsp;&nbsp;Use promo code <span class="green-bg-white-text">BLACKFRIDAY</span> for 15% OFF!
+    </p>
+    <span id="countdown-to-end">Ends in 
+        <span id="countdown-to-end-timer">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-cog fa-spin green"></i>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+    </span>
+    -->
+    
+    
+    <p id="timed-sale-text">
+        🎊 Happy New Year! 🎉 Take 10% off storewide w/ promo code <span class="green-bg-white-text">DS2017</span> 
     </p>
     <span id="countdown-to-end">Ends in 
         <span id="countdown-to-end-timer">
@@ -96,11 +127,14 @@
         </span>
     </span>
 </div>
+
+
+
 <script src="%%ASSET_js/countdown.js%%"></script>
 <script type="text/javascript">
     // use countdown timer plugin to set the "countown to sale's end" clock 
     function setSaleTimer() {
-        $('#countdown-to-end-timer').countdown('2016/10/31 23:59:59')
+        $('#countdown-to-end-timer').countdown('2017/01/14 04:59:59')
         .on('update.countdown', function(event) {
             if(event.strftime('%D') > 0) {
                 $(this).html(event.strftime('%-D day%!D %-H:%M:%S'));
